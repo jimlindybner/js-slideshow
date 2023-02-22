@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <h1>JavaScript Slideshow</h1>
+    <!-- 
+        - 4 images in HTML 
+        - hide images in CSS
+        - assign index to images
+        - display based on indicated index with JS
+    -->
+
+
+    <div class="slideshow">
+        <div class="slide">
+            <img src="./img/artsy-map.jpg" alt="Artsy world map">
+        </div>
+        <div class="slide">
+            <img src="./img/antique-map.jpg" alt="Antique world map">
+        </div>
+        <div class="slide">
+            <img src="./img/world-night.jpg" alt="Night world map">
+        </div>
+        <div class="slide">
+            <img src="./img/earth.jpg" alt="Earth">
+        </div>
+
+        <div class="nav">
+            <a href="#" onclick="previous()">Previous</a>
+            <a href="#" onclick="setSlide(0)">1</a>
+            <a href="#" onclick="setSlide(1)">2</a>
+            <a href="#" onclick="setSlide(2)">3</a>
+            <a href="#" onclick="setSlide(3)">4</a>
+            <a href="#" onclick="next()">Next</a>
+        </div>
+        <div class="counter">
+            1/4
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
